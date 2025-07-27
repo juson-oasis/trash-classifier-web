@@ -1,0 +1,123 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 90%;
+    max-width: 700px;
+    margin: 30px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 200px; /* 로고 크기 조절 */
+    height: auto;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #fefefe;
+    border: 1px solid #eee;
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.upload-btn, .webcam-btn, .classify-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.upload-btn:hover, .webcam-btn:hover, .classify-btn:hover {
+    background-color: #218838;
+}
+
+.preview-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    border: 1px dashed #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+#imagePreview, #webcamStream, #webcamCanvas {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+#classifyBtn {
+    display: block;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.result-section {
+    text-align: center;
+}
+
+.result-box {
+    background-color: #e9ecef;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+}

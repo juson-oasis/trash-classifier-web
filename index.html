@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쓰레기 분류 인식기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>쓰레기 분류 인식기<br>(Garbage Classfication Recognizer)</h1>
+            <div class="logo">
+                <!--<img src="garbage_logo.png" alt="쓰레기 분류 인식기 로고">-->
+            </div>
+        </header>
+
+        <main>
+            <section class="upload-section">
+                <h2>쓰레기 이미지를 올려주세요</h2>
+                <div class="input-group">
+                    <label for="imageUpload" class="upload-btn">이미지 선택</label>
+                    <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+                    </div>
+                <div class="preview-area">
+                    <img id="imagePreview" src="#" alt="선택한 이미지" style="display: none;">
+                </div>
+                <button id="classifyBtn" class="classify-btn" style="display: none;">분류하기</button>
+            </section>
+
+            <section class="result-section">
+                <h2>분류 결과</h2>
+                <div id="classificationResult" class="result-box">여기에 분류 결과가 표시됩니다.</div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 쓰레기 분류 인식기</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
